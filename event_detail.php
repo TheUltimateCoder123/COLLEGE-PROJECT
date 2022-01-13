@@ -115,7 +115,7 @@
 			margin-right: 60px;
 		}
 		table{
-			margin-left:60px
+			margin-left:60px;
 			margin-right:60px;
 			text-align:justify;
 			border-bottom:dashed;

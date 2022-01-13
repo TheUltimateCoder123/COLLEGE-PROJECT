@@ -13,6 +13,7 @@ if (isset($_SESSION['UserFullName'])!=null){
 		echo "&nbsp;|&nbsp; <a class='homeh' href='my_profile.php'>My Profile</a>";
 		echo "&nbsp;|&nbsp; <a class='homeh' href='my_booking.php'>My Booking</a>";
 		echo "&nbsp;|&nbsp; <a class='homeh' href='change_password.php'>Change Password</a>";
+		echo "&nbsp;|&nbsp; <a class='homeh' href='log.php'>Log Activity</a>";
 		echo "&nbsp;|&nbsp; <a class='homeh' href='logout.php'>Logout <i class='fas fa-sign-out-alt'></i></a></p></b>";
 	}
 	else if ($utype=='Student'){

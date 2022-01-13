@@ -49,7 +49,13 @@
 					$_SESSION['UserFullName'] = $row['UserFullName'];
 					$_SESSION['UserID'] = $row['UserID'];
 					$_SESSION['UserType'] = $row['UserType'];
+					$name = $_SESSION['UserFullName'];
+					$pass = md5($upass);
 					$message="Login Success.";
+					
+					$sql = "insert into login_activity (Name, Password,Date,Message) values('$name','$pass',NOW(),'$message')";
+					$res = mysqli_query($conn,$sql);
+				
 					echo "<script type='text/javascript'>alert('$message');</script>";
 					header("Refresh: 0; index.php");
 					} 
